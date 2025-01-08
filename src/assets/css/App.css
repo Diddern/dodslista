@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgba(200, 200, 200, 0.5); /* Light gray background with some transparency */
+}
+
+h1 {
+  margin: 1em;
+}
+
+h2 {
+  margin: 1em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+p {
+  padding: 1.5em;
+  margin-bottom: 20px; /* Adjust the margin to increase or decrease the space */
+}
+
+#splash {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#splash .page-header-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 25%;
+  z-index: -1;
+}
+
+.splash-content {
+  position: relative; /* Add this */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 55%;
+  height: 100%;
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+    .splash-content {
+        margin-top: 80%; /* Change margin-top for screens less than 750px wide */
+    }
+}
+@media (min-width: 1660px) {
+  .splash-content {
+    margin-top: 40%; /* Change margin-top for screens wider than 1660px */
+  }
+}
+
+.about-content {
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.rsvp-btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 0.25em solid #fff;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.rsvp-btn:hover {
+  color: #fff;
+  background: #004596;
+  border: 0.25em solid #004596;
+
+}
+
+#rsvpForm {
+  text-align: center;
+}
+
+#rsvpFrom > p {
+  text-align: center;
+  padding: 0px;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.card {
+  background-color: rgba(220, 220, 220, 0);
+  border: none;
+}
+
+.card-body form .form-group {
+  margin-bottom: 20px;
+}
+
+.card-body h2 {
+  color: #333;
+}
+
+.praktiskinfo-container {
+  justify-content: center;
+}
+
+.praktiskinfo-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.praktiskinfo-text {
+  margin-bottom: 2em;
+}
+
+.overnatting-container {
+  justify-content: center;
+}
+
+.overnatting-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.overnatting-text {
+  margin-bottom: 2em;
+}
+
+.kart-container {
+  justify-content: center;
+}
+
+.kart-content {
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 4em;
+}
+
+.extra-space {
+  height: 20px; /* Adjust the height to increase or decrease the space */
+}
+
+.scroll-down-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, 0); /* Only animate vertical movement */
+  }
+  40% {
+    transform: translate(-50%, -20px); /* Adjust vertical position */
+  }
+  60% {
+    transform: translate(-50%, -10px); /* Adjust vertical position */
+  }
+}
+
+.PwContainer {
+  background-color: black;
+  color: gold;
+  display: flex;
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* Reset inherited styles from body */
+  margin: 0;
+  padding: 0;
+}
