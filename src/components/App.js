@@ -1,14 +1,14 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Lista from './Lista';
-
+import Rulebook from './Rulebook';
+import '../assets/css/App.css';
 const App = () => {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<Lista />} />
-            </Routes>
-        </Router>
+        <div className="container">
+            <h1>Dødslista</h1>
+            <Lista />
+            <Rulebook />
+        </div>
     );
 };
 

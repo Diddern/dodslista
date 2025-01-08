@@ -2,4 +2,4 @@
 
 Verdens mest morbide selskapslek.
 
-Kildekode for [dødslista]. 
+Kildekode for [dødslista](ripforecast.no). 
