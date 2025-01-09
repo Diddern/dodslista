@@ -5,7 +5,7 @@ import '../assets/css/App.css';
 const App = () => {
     return (
         <div className="container">
-            <h1>Dødslista</h1>
+            <h1>R.I.P. Forecast 🪦</h1>
             <Lista />
             <Rulebook />
         </div>

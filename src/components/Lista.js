@@ -52,8 +52,8 @@ const Lista = () => {
 
     return (
         <div className="lista-container">
-            <List title="Didrik's liste" records={didrikRecords} />
-            <List title="Helga's liste" records={helgaRecords} />
+            <List title="Didrik" records={didrikRecords} />
+            <List title="Helga" records={helgaRecords} />
         </div>
     );
 };
