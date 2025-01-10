@@ -1,5 +1,5 @@
-# Dødslista
+# R.I.P. Forecast
 
 Verdens mest morbide selskapslek.
 
-Kildekode for [dødslista](ripforecast.no). 
+Kildekode for [Ripforecast.no](ripforecast.no). 

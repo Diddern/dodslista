@@ -1,8 +1,15 @@
-body {
+html, body, #root {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  background-color: rgba(200, 200, 200, 0.5); /* Light gray background with some transparency */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(200, 200, 200, 0.5);
 }
 
 h1 {
@@ -11,13 +18,10 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
   margin-bottom: 10px;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   width: 100%;
-  max-width: 90%;
 }
 
 h3 {
@@ -35,7 +39,6 @@ p {
   text-align: center;
 }
 
-/* Layout for listene */
 .lista-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -43,7 +46,6 @@ p {
   padding: 20px;
 }
 
-/* Stil for hver liste */
 .list-container {
   border: 1px solid #ddd;
   padding: 15px;
@@ -69,13 +71,14 @@ p {
 }
 
 th, td {
-  padding: 8px;
+  padding: 6px;
   border-bottom: 1px solid #ddd;
   text-align: left;
 }
 
 th {
   background: #e0e0e0;
+  font-size: 0.9em;
 }
 
 .rulebook {
@@ -93,7 +96,7 @@ th {
 .rulebook h2 {
   text-align: center;
   margin-bottom: 10px;
-  font-size: 1.8em;
+  font-size: 1.7em;
 }
 
 .rulebook h3 {
@@ -101,7 +104,6 @@ th {
   font-size: 1.4em;
 }
 
-/* Punktliste */
 .rulebook ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -111,9 +113,14 @@ th {
   font-size: 1.1em;
   margin-bottom: 1em;
 }
+@media (max-width: 700px) {
+  .lista-container {
+    grid-template-columns: 1fr;
+    max-width: 95%;
+  }
 
-@media (max-width: 600px) {
-  .rulebook h2 {
-    font-size: 1.5em; /* Gjør h2 mindre på små skjermer */
+  .list-container {
+    font-size: 0.9em;
+    padding: 8px;
   }
 }
