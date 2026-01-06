@@ -3,7 +3,7 @@ import '../assets/css/App.css';
 const Rulebook = () => (
     <div className="rulebook">
         <h2>Regelverk for R.I.P. Forecast</h2>
-        <p><strong>Versjon 1.0 – Gjeldende for sesongen 2025</strong></p>
+        <p><strong>Versjon 1.1 – Gjeldende for sesongen 2026</strong></p>
 
         <h3>§1 – Generelle bestemmelser</h3>
         <p>1.1. Dette regelverket regulerer spillernes deltakelse i "R.I.P. Forecast" og er bindende for alle deltakere.</p>
@@ -19,6 +19,8 @@ const Rulebook = () => (
         <p>3.2. Gevinstbeløpet skal betales snarest mulig etter at motspilleren er gjort oppmerksom på dødsfallet, enten i form av en fysisk <strong>100-lapp</strong> eller via <strong>Vipps</strong>.</p>
         <p>3.3. Dersom vinneren krever en fysisk 100-lapp, skal dette skje innen rimelig tid. Ved uenighet tolkes "rimelig tid" som innen <strong>7 dager</strong> fra det tidspunktet motspilleren ble gjort oppmerksom på dødsfallet.</p>
         <p>3.4. Unnlatelse av betaling innen fristen kan resultere i utestengelse fra fremtidige runder.</p>
+        <p>3.5. Dersom betaling ikke er mottatt innen fristen etter §3.3, påløper forsinkelsesrente på det utestående beløpet. Rentesatsen skal følge den til enhver tid gjeldende forsinkelsesrente etter norsk rett, avrundet på en måte som er praktisk gjennomførbar for beløp på 100 NOK.</p>
+        <p>3.6. Forsinkelsesrenter beregnes fra og med dagen etter utløpet av betalingsfristen og frem til endelig oppgjør har funnet sted. Spillere står fritt til i stedet å avtale en mer <em>praktisk</em> løsning, for eksempel runding opp til nærmeste 10-krone, vafler eller tilsvarende naturaloppgjør.</p>
 
         <h3>§4 – Valg av kandidater</h3>
         <p>4.1. En kandidat må oppfylle følgende kriterier for å være gyldig på listen:</p>
@@ -39,8 +41,7 @@ const Rulebook = () => (
 
         <h3>§6 – Tvisteløsning</h3>
         <p>6.1. Ved uenighet om tolkning av reglene skal partene forsøke å løse saken gjennom forhandling.</p>
-        <p>6.2. Dersom partene ikke oppnår enighet, kan de velge en <strong>nøytral tredjepart</strong> som får fullmakt til å avgjøre tvisten.</p>
-        <p>6.3. Dersom enighet ikke oppnås innen rimelig tid (7 dager), anses tredjepartens avgjørelse som endelig og bindende.</p>
+        <p>6.2. Dersom partene ikke oppnår enighet, kan de velge en <strong>nøytral tredjepart</strong> som får fullmakt til å avgjøre tvisten. Tredjepartens avgjørelse er endelig og bindende.</p>
     </div>
 );
 

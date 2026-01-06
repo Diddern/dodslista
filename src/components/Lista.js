@@ -55,11 +55,22 @@ const Lista = () => {
         return nameA.localeCompare(nameB); // 📌 Alfabetisk sortering
     };
 
-    const didrikRecords = records
+    const currentYear = new Date().getFullYear();
+
+    const yearFilteredRecords = records.filter((record) => {
+        const yearField = record?.fields?.Year;
+        if (yearField == null) return false;
+        // Year might be a number, a string, or an array with one value
+        const yearValue = Array.isArray(yearField) ? yearField[0] : yearField;
+        const yearNumber = Number(yearValue);
+        return !Number.isNaN(yearNumber) && yearNumber === currentYear;
+    });
+
+    const didrikRecords = yearFilteredRecords
         .filter((record) => record.fields.Assignee === "Didrik")
         .sort(sortByName);
 
-    const helgaRecords = records
+    const helgaRecords = yearFilteredRecords
         .filter((record) => record.fields.Assignee === "Helga")
         .sort(sortByName);
 
