@@ -60,10 +60,18 @@ const Lista = () => {
     const yearFilteredRecords = records.filter((record) => {
         const yearField = record?.fields?.Year;
         if (yearField == null) return false;
-        // Year might be a number, a string, or an array with one value
-        const yearValue = Array.isArray(yearField) ? yearField[0] : yearField;
-        const yearNumber = Number(yearValue);
-        return !Number.isNaN(yearNumber) && yearNumber === currentYear;
+        const currentYearStr = String(currentYear);
+        // If Year is an array (multi-select), check if any selected value matches the current year.
+        if (Array.isArray(yearField)) {
+            return yearField.some((item) => {
+                if (item == null) return false;
+                // item may be a string like "2026" or an object like { name: "2026" }
+                if (typeof item === 'object') return String(item.name) === currentYearStr;
+                return String(item) === currentYearStr;
+            });
+        }
+        const yearValue = yearField;
+        return String(yearValue) === currentYearStr || Number(yearValue) === currentYear;
     });
 
     const didrikRecords = yearFilteredRecords
